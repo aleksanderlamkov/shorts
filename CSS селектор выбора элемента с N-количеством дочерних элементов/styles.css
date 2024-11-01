@@ -1,0 +1,16 @@
+li:nth-last-child(2):first-child,
+li:nth-last-child(2):first-child ~ li {
+  background-color: coral;
+}
+
+li:nth-last-child(4):first-child,
+li:nth-last-child(4):first-child ~ li {
+  background-color: lawngreen;
+}
+
+li:nth-last-child(6):first-child,
+li:nth-last-child(6):first-child ~ li {
+  background-color: deepskyblue;
+}
+
+/*# sourceMappingURL=styles.css.map */

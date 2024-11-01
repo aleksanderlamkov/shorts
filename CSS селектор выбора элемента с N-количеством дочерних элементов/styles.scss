@@ -1,0 +1,18 @@
+@mixin by-siblings-amount-selector($element-selector, $siblings-amount) {
+  #{$element-selector}:nth-last-child(#{$siblings-amount}):first-child,
+  #{$element-selector}:nth-last-child(#{$siblings-amount}):first-child ~ #{$element-selector} {
+    @content;
+  }
+}
+
+@include by-siblings-amount-selector(li, 2) {
+  background-color: coral;
+}
+
+@include by-siblings-amount-selector(li, 4) {
+  background-color: lawngreen;
+}
+
+@include by-siblings-amount-selector(li, 6) {
+  background-color: deepskyblue;
+}
