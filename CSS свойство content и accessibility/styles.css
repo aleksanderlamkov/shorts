@@ -1,0 +1,20 @@
+[class$="-icon"]::before {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.25em;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: top;
+}
+
+.has-success-icon::before {
+  content: '' / 'Ответ верный';
+  background-image: url('./icon-success.svg');
+}
+
+.has-error-icon::before {
+  content: '' / 'Ответ неверный';
+  background-image: url('./icon-error.svg');
+}
