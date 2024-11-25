@@ -1,0 +1,11 @@
+video {
+  width: 100%;
+  height: auto;
+  transition-duration: 0.2s;
+}
+
+video:picture-in-picture {
+  opacity: 0.75;
+  box-shadow: 0 0 0.75rem 0.5rem rgb(0 0 0 / 0.8);
+  scale: 0.9;
+}
