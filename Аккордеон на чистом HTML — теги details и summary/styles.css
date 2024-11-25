@@ -1,0 +1,13 @@
+.accordion__content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition-duration: 0.3s;
+}
+
+.accordion__content-body {
+  overflow: hidden;
+}
+
+.accordion__details[open] + .accordion__content {
+  grid-template-rows: 1fr;
+}
