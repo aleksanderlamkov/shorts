@@ -1,0 +1,33 @@
+dialog {
+  margin-inline: 1rem;
+  padding-top: 2rem;
+}
+
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.5);
+}
+
+dialog button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+dialog,
+dialog::backdrop {
+  opacity: 0;
+  scale: 1.05;
+  transition-duration: 0.2s;
+  transition-behavior: allow-discrete;
+}
+
+dialog[open],
+dialog[open]::backdrop {
+  opacity: 1;
+  scale: 1;
+
+  @starting-style {
+    opacity: 0;
+    scale: 1.05;
+  }
+}

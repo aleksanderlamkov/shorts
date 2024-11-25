@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Модальное окно на чистом HTML — тег dialog</title>
+</head>
+<body>
+  <button
+    type="button"
+    onclick="overlayMenu.showModal()"
+  >
+    Открыть модальное окно
+  </button>
+
+  <dialog id="overlayMenu">
+    <form method="dialog">
+      <button type="submit">
+        Закрыть модальное окно
+      </button>
+    </form>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam aspernatur, blanditiis excepturi itaque magnam magni molestiae molestias non quas, quasi repellendus sint veniam vero voluptate? Debitis delectus dolore, dolores dolorum esse eum incidunt inventore ipsa maiores molestias nam nihil non odit omnis possimus quasi ratione repellat repudiandae soluta ullam!
+    </p>
+  </dialog>
+</body>
+</html>
