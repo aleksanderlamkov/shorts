@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  max-width: 250px;
+  padding: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.25em;
+}
+
+textarea {
+  min-height: 5em;
+}
+
+.notifications {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  pointer-events: none;
+  font-size: 0.75rem;
+}
+
+.notifications:empty {
+  display: none;
+}
+
+.notifications__item {
+  padding: 0.5em 0.75em;
+  background-color: lightgreen;
+  border-radius: 0.5em;
+  animation-name: move-to-left;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move-to-left {
+  0%,
+  100% {
+    translate: 50vw;
+  }
+
+  10%,
+  90% {
+    translate: 0;
+  }
+}
