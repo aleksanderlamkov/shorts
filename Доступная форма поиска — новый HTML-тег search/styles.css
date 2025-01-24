@@ -1,0 +1,28 @@
+form {
+  display: grid;
+  grid-template-columns: auto 2rem;
+  gap: 0.5rem;
+  padding: 1rem;
+  background-color: deepskyblue;
+  border-radius: 1rem;
+}
+
+form,
+input,
+button {
+  border: 2px solid darkblue;
+}
+
+input,
+button {
+  border-radius: 0.35rem;
+}
+
+label {
+  grid-column: -1 / 1;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}

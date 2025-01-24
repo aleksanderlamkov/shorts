@@ -1,0 +1,17 @@
+.box {
+  --bgColor: lightcoral;
+  --borderGradient: linear-gradient(
+    to right, #bb2577, #3782ef
+  );
+
+  width: 100px;
+  height: 100px;
+  background:
+    linear-gradient(
+      var(--bgColor),
+      var(--bgColor)
+    ) padding-box,
+    var(--borderGradient) border-box;
+  border: 10px solid transparent;
+  border-radius: 15px;
+}

@@ -1,0 +1,14 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.grid-item {
+  padding: 1rem;
+  background-color: coral;
+}
+
+.grid-item:last-child {
+  grid-column: -1 / 1;
+}

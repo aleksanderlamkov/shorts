@@ -1,0 +1,20 @@
+.steps-line {
+  position: relative;
+}
+
+.steps-line::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  width: 0;
+  background-color: gold;
+  animation-name: steps-progress;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-timing-function: steps(5);
+}
+
+@keyframes steps-progress {
+  to { width: 100% }
+}

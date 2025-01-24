@@ -1,0 +1,21 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+  gap: 16px;
+}
+
+.card {
+  padding: 16px;
+  background-color: white;
+  box-shadow: 0 0 8px rgb(0 0 0 / 0.6);
+  border-radius: 12px;
+}
+
+.card:has(.card__image) {
+  background-color: lightskyblue;
+}
+
+.card:not(:has(.card__description)) {
+  border: 10px solid darkred;
+}

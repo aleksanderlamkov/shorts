@@ -1,0 +1,21 @@
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.25rem;
+  cursor: pointer;
+}
+
+.checkbox__input {
+  appearance: none;
+  display: inline-grid;
+  place-content: center;
+  width: 1rem;
+  height: 1rem;
+  background-color: lightskyblue;
+  border: 0.1rem solid darkslategrey;
+  border-radius: 0.25rem;
+}
+
+.checkbox__input:checked::after {
+  content: '✓';
+}

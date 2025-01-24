@@ -1,0 +1,8 @@
+.box {
+  position: relative;
+  background-color: seagreen;
+
+  z-index: rem(11, 3);        /* 2 */
+  width:   rem(150%, 100%);   /* 50% */
+  height:  rem(500px, 200px); /* 100px */
+}

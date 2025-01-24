@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    * {
+      font-family: 'Rubik', sans-serif;
+    }
+
+    body {
+      margin-top: 20px;
+    }
+  </style>
+  <link rel="stylesheet" href="./styles.css">
+  <title>Доступная форма поиска — новый HTML-тег search</title>
+</head>
+<body>
+  <search role="search">
+    <form action="/search" method="get">
+      <label for="search-field">Введите запрос:</label>
+      <input
+        id="search-field"
+        type="search"
+        placeholder="HTML CSS..."
+      />
+      <button type="submit" aria-label="Искать">
+        <svg width="90" height="91" viewBox="0 0 90 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M35.6992 13.0996C23.2992 13.0996 13.1992 23.1996 13.1992 35.5996C13.1992 37.6996 14.8992 39.3996 16.9992 39.3996C19.0992 39.3996 20.7992 37.6996 20.7992 35.5996C20.7992 27.2996 27.4992 20.5996 35.7992 20.5996C37.8992 20.5996 39.5992 18.8996 39.5992 16.7996C39.5992 14.6996 37.6992 13.0996 35.6992 13.0996Z" fill="black"/>
+          <path d="M87.1 72.4L67.1 52.4C69.8 47.4 71.3 41.7 71.3 35.6C71.3 16 55.3 0 35.7 0C16.1 0 0 16 0 35.7C0 55.4 16 71.4 35.7 71.4C41.8 71.4 47.5 69.9 52.5 67.2L72.5 87.2C74.3 89 77.1 90.1 80 90.1C82.6 90.1 85.2 89.2 87.2 87.2C91.3 82.9 90.6 75.9 87.1 72.4ZM7.5 35.7C7.5 20.2 20.1 7.5 35.7 7.5C51.3 7.5 63.9 20.1 63.9 35.7C63.9 51.3 51.2 63.8 35.7 63.8C20.2 63.8 7.5 51.2 7.5 35.7ZM81.8 81.8C80.6 83 78.2 82.3 77.7 81.8L58.7 62.8C60.2 61.6 61.5 60.2 62.8 58.7L81.8 77.7C82.3 78.2 83 80.6 81.8 81.8Z" fill="black"/>
+        </svg>
+      </button>
+    </form>
+  </search>
+</body>
+</html>

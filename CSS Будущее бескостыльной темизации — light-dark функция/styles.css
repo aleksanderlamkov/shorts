@@ -1,0 +1,18 @@
+:root {
+  --color-light: #b4e7d4;
+  --color-dark: #0d0f2f;
+
+  color-scheme: light dark;
+}
+
+body {
+  color: light-dark(
+    var(--color-dark),
+    var(--color-light)
+  );
+
+  background-color: light-dark(
+    var(--color-light),
+    var(--color-dark)
+  );
+}
